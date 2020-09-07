@@ -1,1 +1,14 @@
-<h1>Hello world</h1>
+<h1>404 - Not found</h1>
+<script>
+
+    redirects = {
+
+        contact: "mailto:gioac96@gmail.com",
+        veronica: "https://github.com/GioAc96/Veronica"
+
+    }
+
+    window.location.href = redirects[window.location.href.split(".gioac96.rocks")[0].substr(8)]
+
+</script>
+
