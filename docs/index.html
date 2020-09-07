@@ -1,18 +1,20 @@
-<h1>404 - Not found</h1>
-<script>
+<body style="display: none;">
+    <h1>Not Found</h1>
+    <script>
+    
+        redirects = {
+    
+            contact: "mailto:gioac96@gmail.com",
+            veronica: "https://github.com/GioAc96/Veronica"
+    
+        }
+    
+        redirect = redirects[window.location.href.split(".gioac96.rocks")[0].substr(8)]
+    
+        console.log("redirect:")
+        console.log(redirect)
+    
+    
+    </script>
 
-    redirects = {
-
-        contact: "mailto:gioac96@gmail.com",
-        veronica: "https://github.com/GioAc96/Veronica"
-
-    }
-
-    redirect = redirects[window.location.href.split(".gioac96.rocks")[0].substr(8)]
-
-    console.log("redirect:")
-    console.log(redirect)
-
-
-</script>
-
+</body>    
